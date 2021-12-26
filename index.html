@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>form</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
@@ -16,7 +16,7 @@
           <input type="email" id="email" value="">
           <label for="password"> Password</label>
           <input type="password" id="password" value="">
-          <span id ="eye" class="eye"><i id="icon" class="fa fa-eye" aria-hidden="true"></i></span>
+          <span id ="eye" class="eye"><i id="icon" class="fa fa-eye-slash" aria-hidden="true"></i></span>
           <a href="#">forgot password ?</a>
         </div>
 
@@ -28,24 +28,6 @@
       </form>
 
     </div>
-  <script type="text/javascript">
-    var eye = document.getElementById("icon");
-
-
-      eye.addEventListener("click", function() {
-
-      if (eye.classList.contains("fa-eye")) {
-        document.getElementById("password").setAttribute('type', 'text')
-        eye.classList.remove("fa-eye");
-        eye.classList.add("fa-eye-slash");
-      }else {
-        eye.classList.remove("fa-eye-slash");
-        eye.classList.add("fa-eye");
-        document.getElementById("password").setAttribute('type', 'password')
-      }
-
-
-    });
-  </script>
+    <script src="./script.js"></script>
   </body>
 </html>
